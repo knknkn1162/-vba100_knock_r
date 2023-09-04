@@ -3,4 +3,5 @@ read_excel("VBA100_39.xlsm", col_names=c("a", "b")) |>
   drop_na() |>
   distinct(value) |>
   arrange(value) |>
-  pull(value)
+  pull(value) |>
+  print()
